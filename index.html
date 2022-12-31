@@ -1,95 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>watch</title>
+    <title>paralax-effect</title>
 </head>
-
 <body>
-    <div class="tabsPanel">
-        <!-- Tablar -->
-        <ul class="tabsLinks">
-            <li class="tabsItem active"><a href="#" class="tabsLink">Часы</a></li>
-            <li class="tabsItem">
-                <a href="#" class="tabsLink">Секундомер
-                    <!-- Sekundomer ishlayotganini bildirib turadi
-                    O`ziga ishlashini bildirayotgan active classini oladi
-                    active - sekundomer ishlayapti
-                    active_clear - Sekundomer toxtatilgan ammo malumot ochirilmagan
-                    -->
-                    <span class="tabsLink__span"></span>
-                </a>
-            </li>
-        </ul>
-        <!-- Tablar -->
-        <div class="tabsContent">
-            <!-- Ko`rsatkichli soat -->
-            <div class="clock tabsContentItem active">
-                <div class="arrowClock">
-                    <!-- Soat -->
-                    <div class="arrowClockNumber">
-                        <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
-                        <div class="arrowClockNumber__num arrowClockNumber__num_3">3</div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_4"></div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_5"></div>
-                        <div class="arrowClockNumber__num arrowClockNumber__num_6">6</div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_7"></div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_8"></div>
-                        <div class="arrowClockNumber__num arrowClockNumber__num_9">9</div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_10"></div>
-                        <div class="arrowClockNumber__arr arrowClockNumber__arr_11"></div>
-                    </div>
-
-                    <!-- Ko`rsatkichlar  -->
-
-                    <div class="s" style="transform: rotate(210deg);"></div> <!-- soniya -->
-                    <div class="m" style="transform: rotate(114deg);"></div> <!-- daqiqa -->
-                    <div class="h" style="transform: rotate(30deg);"></div> <!-- soat -->
-                </div>
-                <div class="numberClock">
-                    <!-- Vaqtni son ko`rinishida chiqarish -->
-                    <div class="hours">01</div>
-                    <div class="minutes">19</div>
-                </div>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <a href="" class="header__logo">Logo</a>
+                <ul class="header__list">
+                    <li class="heaader__item"><a href="" class="header__link">home</a></li>
+                    <li class="heaader__item"><a href="" class="header__link">home</a></li>
+                    <li class="heaader__item"><a href="" class="header__link">home</a></li>
+                    <li class="heaader__item"><a href="" class="header__link">home</a></li>
+                </ul>
             </div>
-            <!-- Uyga sekundomer -->
-            <!-- 
-
-            Vazifa: Rekursiya yordamida Date()siz ishlaydigan sekundomer yasash    
-
-             -->
-            <div class="stopwatch tabsContentItem ">
-                <div class="stopwatch__clock">
-
-                    <div class="stopwatch__clock-description">
-                        <!-- Soat -->
-                        <div class="stopwatch__hours">0</div>
-                        Час.
-                    </div>
-                    <div class="stopwatch__clock-description">
-                        <!-- Daqiqa -->
-                        <div class="stopwatch__minutes">0</div>
-                        Мин.
-                    </div>
-                    <div class="stopwatch__clock-description">
-                        <!-- Soniya -->
-                        <div class="stopwatch__seconds">0</div>
-                        Сек.
-                    </div>
-                </div>
-                <!-- Sekundomerni ishlatadigan tugma -->
-                <button class="stopwatch__btn">start</button>
-            </div>
+        </nav>
+        <img src="img/Untitled/fantasy.png" alt="" class="fantasy">
+        <img src="img/Untitled/cloud1.png" alt="" class="clouds cloud_1" data-speed="1.6">
+        <img src="img/Untitled/cloud2.png" alt="" class="clouds cloud_2" data-speed="-1.6">
+        <img src="img/Untitled/cloud3.png" alt="" class="clouds cloud_3" data-speed="0.8">
+        <img src="img/Untitled/boat.png" alt="" class="boat">
+        <div class="header__content">
+            <h1 class="header__title">paralax effect</h1>
         </div>
-    </div>
-
-    <script src="js/script.js"></script>
+    </header>
+    <main class="main">
+        <section class="paralax">
+            <h2 class="paralax__title">paralax effect</h2>
+            <div class="paralax__box">
+                <img src="img/Parallax_3.png" alt="" class="paralax__banner">
+                <img src="img/Parallax_4.png" data-speed="1.5" alt="" class="layer paralax__img">
+                <img src="img/Parallax_5.png" data-speed="-1.5" alt="" class="layer paralax__img2">
+            </div>
+        </section>
+        <section class="timer">
+            <div class="container">
+                <div class="timer__item">
+                    <p class="timer__num" data-timer="50">50</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-timer="80">80</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-timer="100">100</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="timer__item">
+                    <p class="timer__num" data-timer="120">120</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
